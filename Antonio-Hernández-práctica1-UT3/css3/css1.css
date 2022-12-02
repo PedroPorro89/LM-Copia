@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    min-height: 25vh;
+
+    background: url("/img/MiLogo.png") no-repeat center;
+    background-size: 180px;
+    background-color: rgb(219, 219, 219);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+nav ul
+{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+}
+nav a {
+    background-color: rgb(219, 219, 219);
+    color: rgb(17, 17, 17);
+    margin-right: 5px;
+    min-width: 8vw;
+    min-height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+nav a:hover
+{
+    color: rgb(219, 219, 219);
+    background-color:rgb(44, 44, 44);
+}
+
+main {
+    display: flex;
+    min-height: 50vh;
+    text-overflow: ellipsis;
+
+}
+
+
+footer {
+    min-height: 20vh;
+    display: flex;
+    justify-content: right;
+    background-color: rgb(53, 110, 36);
+    padding-right: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 12pt;
+
+}
+
+main section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    min-height: 50vh;
+    text-overflow: ellipsis;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+input {
+
+    margin: 3px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    height: 20px;
+    
+}
+
+::placeholder {
+    text-align: center;
+}
+
+.RecordarPass {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.RecordarPass input {
+    margin: 0;
+    margin-left: 10px;
+}
+
+.submitBtn {
+    height: 50px;
+    background-color: rgb(73, 141, 52);
+    margin: 5px;
+    padding: 15px;
+    color: white;
+    border-radius: 8px;
+    font-size: 12pt;
+    font-weight: bold;
+}
+
+.submitBtn:hover{
+    background-color: rgb(54, 105, 38);
+    visibility: visible;
+}
+
+.tooltip
+{
+
+    border: 3px solid black;
+    border-radius: 6px;
+    min-height: 3px;
+    background-color: black;
+    color: white;
+    visibility:hidden;
+    text-align: center;
+}
+
+.submitBtn:hover ~ .tooltip {
+    
+    visibility: visible;
+}
